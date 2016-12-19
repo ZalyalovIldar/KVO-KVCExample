@@ -14,6 +14,10 @@
 		7CB1F8681E07F25B0036B281 /* KVCExpample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CB1F8661E07F25B0036B281 /* KVCExpample.xcdatamodeld */; };
 		7CB1F86A1E07F25B0036B281 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB1F8691E07F25B0036B281 /* Assets.xcassets */; };
 		7CB1F86D1E07F25B0036B281 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB1F86B1E07F25B0036B281 /* LaunchScreen.storyboard */; };
+		7CB1F8761E07F2810036B281 /* Jedy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB1F8751E07F2810036B281 /* Jedy.m */; };
+		7CB1F87B1E07F84E0036B281 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB1F87A1E07F84E0036B281 /* ViewController2.m */; };
+		7CB1F87E1E07F8640036B281 /* Storyboard2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB1F87D1E07F8640036B281 /* Storyboard2.storyboard */; };
+		7CB1F8821E07FF870036B281 /* MutableArrKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB1F8811E07FF870036B281 /* MutableArrKVO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,13 @@
 		7CB1F8691E07F25B0036B281 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CB1F86C1E07F25B0036B281 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CB1F86E1E07F25B0036B281 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CB1F8741E07F2810036B281 /* Jedy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jedy.h; sourceTree = "<group>"; };
+		7CB1F8751E07F2810036B281 /* Jedy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jedy.m; sourceTree = "<group>"; };
+		7CB1F8791E07F84E0036B281 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		7CB1F87A1E07F84E0036B281 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		7CB1F87D1E07F8640036B281 /* Storyboard2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard2.storyboard; sourceTree = "<group>"; };
+		7CB1F8801E07FF870036B281 /* MutableArrKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutableArrKVO.h; sourceTree = "<group>"; };
+		7CB1F8811E07FF870036B281 /* MutableArrKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutableArrKVO.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +73,9 @@
 			children = (
 				7CB1F85D1E07F25B0036B281 /* AppDelegate.h */,
 				7CB1F85E1E07F25B0036B281 /* AppDelegate.m */,
-				7CB1F8601E07F25B0036B281 /* ViewController.h */,
-				7CB1F8611E07F25B0036B281 /* ViewController.m */,
-				7CB1F8631E07F25B0036B281 /* Main.storyboard */,
+				7CB1F87C1E07F8540036B281 /* Controller2 */,
+				7CB1F8771E07F8340036B281 /* Model */,
+				7CB1F8781E07F83B0036B281 /* Controller1 */,
 				7CB1F8691E07F25B0036B281 /* Assets.xcassets */,
 				7CB1F86B1E07F25B0036B281 /* LaunchScreen.storyboard */,
 				7CB1F86E1E07F25B0036B281 /* Info.plist */,
@@ -80,6 +91,53 @@
 				7CB1F85B1E07F25B0036B281 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CB1F8771E07F8340036B281 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7CB1F87F1E07FF6F0036B281 /* JedyModel */,
+				7CB1F8831E07FF8D0036B281 /* Helpers */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7CB1F8781E07F83B0036B281 /* Controller1 */ = {
+			isa = PBXGroup;
+			children = (
+				7CB1F8601E07F25B0036B281 /* ViewController.h */,
+				7CB1F8611E07F25B0036B281 /* ViewController.m */,
+				7CB1F8631E07F25B0036B281 /* Main.storyboard */,
+			);
+			name = Controller1;
+			sourceTree = "<group>";
+		};
+		7CB1F87C1E07F8540036B281 /* Controller2 */ = {
+			isa = PBXGroup;
+			children = (
+				7CB1F8791E07F84E0036B281 /* ViewController2.h */,
+				7CB1F87A1E07F84E0036B281 /* ViewController2.m */,
+				7CB1F87D1E07F8640036B281 /* Storyboard2.storyboard */,
+			);
+			name = Controller2;
+			sourceTree = "<group>";
+		};
+		7CB1F87F1E07FF6F0036B281 /* JedyModel */ = {
+			isa = PBXGroup;
+			children = (
+				7CB1F8741E07F2810036B281 /* Jedy.h */,
+				7CB1F8751E07F2810036B281 /* Jedy.m */,
+			);
+			name = JedyModel;
+			sourceTree = "<group>";
+		};
+		7CB1F8831E07FF8D0036B281 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7CB1F8801E07FF870036B281 /* MutableArrKVO.h */,
+				7CB1F8811E07FF870036B281 /* MutableArrKVO.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CB1F87E1E07F8640036B281 /* Storyboard2.storyboard in Resources */,
 				7CB1F86D1E07F25B0036B281 /* LaunchScreen.storyboard in Resources */,
 				7CB1F86A1E07F25B0036B281 /* Assets.xcassets in Resources */,
 				7CB1F8651E07F25B0036B281 /* Main.storyboard in Resources */,
@@ -153,10 +212,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CB1F8761E07F2810036B281 /* Jedy.m in Sources */,
 				7CB1F8681E07F25B0036B281 /* KVCExpample.xcdatamodeld in Sources */,
 				7CB1F8621E07F25B0036B281 /* ViewController.m in Sources */,
 				7CB1F85F1E07F25B0036B281 /* AppDelegate.m in Sources */,
+				7CB1F8821E07FF870036B281 /* MutableArrKVO.m in Sources */,
 				7CB1F85C1E07F25B0036B281 /* main.m in Sources */,
+				7CB1F87B1E07F84E0036B281 /* ViewController2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
